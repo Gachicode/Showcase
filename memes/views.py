@@ -14,6 +14,8 @@ menu = [{'title': "О сайте", 'url_name': 'about'},
 def about(request):
     return render(request, 'memes/about.html', {'menu': menu, "title": 'О сайте1'})
 
+def kek(request):
+    pass
 
 def index(request):
     posts = Memes.objects.all()
